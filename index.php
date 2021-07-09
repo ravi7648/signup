@@ -1,18 +1,24 @@
-Full Name: <input type="text" name="Name" value="<?php echo $name;?>">
+<?php
+// if(isset($_POST['submit'])){
+// $roll=$_POST['rollno'];
+// $uname=$_POST['uname'];
+// $email=$_POST['email'];
+// $password=$_POST['pwd'];
+// $gender=$_POST['gender'];
+// $college=$_POST['clg'];
+// $branch=$_POST['branch'];
+// if(!empty($roll) || !empty($roll) || !empty($roll) || !empty($roll) || !empty($roll) || !empty($roll) || !empty($roll)){
+// 	$con=mysqli_connect("localhost","root","","student_registration");
+// 	$insert="INSERT Into student SET Roll_number='".$roll."',Name='".$uname."',Email='".$email."',Password='".$password."',Gender='".$gender."',College='".$college."',Branch='".$branch."'";
+// 	$res=mysqli_query($con,$insert);
+//       if($res){
+//           echo "<script>alert('Successfully Registered,please login');location.href='login.html'</script>";
+//       }
+//       else{
+//           echo "<script>alert('Already have an account,Please login');location.href='login.html'</script>";
+//       }
+//   }
+// }
 
-E-mail: <input type="text" name="Email" value="<?php echo $email;?>">
 
-Website: <input type="text" name="Website" value="<?php echo $website;?>">
-
-Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-
-Gender:
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="female") echo "checked";?>
-value="female">Female
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="male") echo "checked";?>
-value="male">Male
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="other") echo "checked";?>
-value="other">Other
+?>
